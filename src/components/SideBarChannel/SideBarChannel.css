@@ -1,0 +1,21 @@
+.sidbar_channel_item {
+  color: gray;
+  display: flex;
+  padding-left: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+.sidbar_channel_item_header {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.sidbar_channel_item_header:hover {
+  color: white;
+  background-color: #40464b;
+}
+
+.sidebar_channle_hash {
+  font-size: 36px;
+  padding: 8px;
+}
