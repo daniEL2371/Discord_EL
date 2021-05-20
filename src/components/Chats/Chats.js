@@ -50,6 +50,7 @@ function Chats(props) {
           message: inputValue,
           user: user,
         });
+      setInput("");
     }
   };
   return (
@@ -92,6 +93,8 @@ function Chats(props) {
         <AddCircle fontSize="large" />
         <form>
           <input
+            disabled={!channelId}
+            value={inputValue}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Message #TESTCHANNEL"
           />

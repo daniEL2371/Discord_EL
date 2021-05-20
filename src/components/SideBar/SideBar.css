@@ -90,3 +90,17 @@
   justify-content: space-between;
   flex: 0.3;
 }
+.sidebar_channles {
+  overflow: scroll;
+}
+.sidebar_channles::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar_channles::-webkit-scrollbar {
+  display: none;
+}
+.sidebar_channles {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
