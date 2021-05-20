@@ -7,7 +7,12 @@ import {
   Search,
   Send,
   Help,
+  AddCircle,
+  CardGiftcard,
+  EmojiEmotions,
+  Gif,
 } from "@material-ui/icons";
+import Messages from "../Messages/Messages";
 
 function Chats(props) {
   return (
@@ -33,6 +38,25 @@ function Chats(props) {
             <Send fontSize="small" />
             <Help fontSize="small" />
           </div>
+        </div>
+      </div>
+      <div className="chat_messages">
+        <Messages />
+        <Messages />
+        <Messages />
+      </div>
+      <div className="chat_input">
+        <AddCircle fontSize="large" />
+        <form>
+          <input placeholder="Message #TESTCHANNEL" />
+          <button type="submit" className="chat_submit">
+            Send
+          </button>
+        </form>
+        <div className="chat_inputIcons">
+          <CardGiftcard fontSize="large" />
+          <Gif fontSize="large" />
+          <EmojiEmotions fontSize="large" />
         </div>
       </div>
     </div>

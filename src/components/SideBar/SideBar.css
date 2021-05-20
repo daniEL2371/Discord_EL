@@ -40,8 +40,8 @@
   justify-content: space-between;
   align-items: center;
   color: gray;
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid gray;
   padding: 5px;
 }
 .sidebar_voiceInfo {

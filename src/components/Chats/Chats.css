@@ -64,3 +64,34 @@
   margin: 3px;
   flex: 1;
 }
+
+.chat_input {
+  color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 20px;
+  background-color: #474b53;
+  border-top: 1px solid grey;
+}
+.chat_input > form > input {
+  color: white;
+  font-size: large;
+  background: transparent;
+  outline-width: 0;
+  padding: 15px;
+  border: none;
+}
+.chat_input > form {
+  flex: 1;
+}
+.chat_input > form > .chat_submit {
+  display: none;
+}
+.chat_inputIcons > .MuiSvgIcon-root {
+  padding: 5px;
+}
+.chat_messages {
+  flex: 1;
+}
