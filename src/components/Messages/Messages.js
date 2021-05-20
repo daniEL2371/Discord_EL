@@ -1,16 +1,20 @@
 import { Avatar } from "@material-ui/core";
 import React from "react";
 import "./Messages.css";
-function Messages(props) {
+import moment from "moment";
+function Messages({ _message, timestamp, userName, userPhoto }) {
   return (
     <div className="message">
-      <Avatar />
+      <Avatar src={userPhoto} />
       <div className="message_info">
         <h4>
-          Daniel Zelalem
-          <span className="message_timestamp"> this is a time stamp</span>
+          {userName}
+          <span className="message_timestamp">
+            {" "}
+            {moment(new Date(timestamp?.toDate()).toUTCString()).fromNow()}
+          </span>
         </h4>
-        <p>this is a message</p>
+        <p>{_message}</p>
       </div>
     </div>
   );
