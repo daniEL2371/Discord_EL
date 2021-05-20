@@ -95,3 +95,14 @@
   flex: 1;
   overflow: scroll;
 }
+.chat_messages::-webkit-scrollbar {
+  display: none;
+}
+
+.chat_messages::-webkit-scrollbar {
+  display: none;
+}
+.chat_messages {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
